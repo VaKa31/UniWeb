@@ -118,58 +118,72 @@ body {
 .content {
     will-change: transform;
 }
-.form {
-    position: absolute;
-    top: 60%;
-    left: 42.450;
+#form {
+    position: fixed;
+    margin: 9vh auto 0 auto;
+    width: 300px;
+    left: 40.5%;
+    padding:20px;
+    border-radius: 4px;
     transform: translate(-2.8%, -20%);
 }
-.form h1 {
-margin: 20x 100px;
-padding: 0;
-text-align: center;
-font-size: 20px;
-text-transform: uppercase;
-}
-.input-form {
-    margin: 15px 40px;
-}
-.input-form input {
-    padding: 10px;
-    color: #fff;
-    font-size: 10px;
-    background: #010101;
-    outline: none;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-}
-.input-form input[type="submit"] {
-    margin-top: 15px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    background: #9e7d35;
-    transition: .3s;
-}
-.input-form input[type="submit"]:hover {
-    background: #826320;
-}
-.form a {
-    display: block;
-    padding: 0 0 30px;
+#form h1 {
+    margin: 20x 100px;
+    padding: 0;
     text-align: center;
-    color: #fff;
-    text-decoration: none;
-    transition: .3s;
-    font-size: 13px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-.form a:hover {
+
+
+
+#form button{
+    padding: 2px;
+    margin-top: 10px;
+    width: 35%;
     color: #826320;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 2px;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control input{
+    border: 2px solid  aliceblue;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 3px;
+    width: 100%;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+    border-color: rgb(56, 136, 105);
+}
+.input-control.error input {
+    border-color: rgb(118, 46, 46);
+}
+
+.input-control.error {
+    color: rgb(248, 25, 25);
+}
+
+.deldiv {
+    height: 50px;
+    width: 50px;
+}
+.button {
+    width: 50%;
+    height: 50%;
+    background-color: aliceblue;
 }
 .copy {
     position: absolute;
-    bottom: calc(var(--index) * 2.5);
+    bottom: calc(var(--index) * 0.5);
     opacity: 45;
     font-size: calc(var(--index) * 0.75);
     letter-spacing: calc(var(--index) / 37.5);
