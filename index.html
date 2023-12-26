@@ -21,38 +21,16 @@
     
     <div class="wrapper">
         <div class="content">
-
-            <header class="main-header">
-                <div class="layers">
-                    <div class="layer_header">
-                        <div class="layers_caption">Welcome to my Kingdom</div>
-                        <div class="layers_title">Fairy Forest</div>
-                    </div>
-                    <div class="layer layers_base" style="background-image: url(img/layer-base.png);"></div>
-                    <div class="layer layers_middle" style="background-image: url(img/layer-middle.png);"></div>
-                    <div class="layer layers_front" style="background-image: url(img/layer-front.png);" ></div>
-                </div>
-            </header>
-            
+            <?php
+            $header=file_get_contents('header.html');
+            echo $header;
+            ?>
             <article class="main-article" style="background-image: url(img/dungeon.jpg);">
-                <div class="main-article_content">
-                    <h2 class="main-article_header">Do you love our university?</h2>
-                    <p class="main-article_paragraph">I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. I love Jinx. <br> I love Jinx.</p>
-                </div>
-                <div class="form">
-                    <h1>Are you our soldier?</h1>
-                    <div class="input-form">
-                        <input type="text" placeholder="Username" required pattern="[a-zA-Z]" minlength="4" title="Username must be longer 4 symbols and it can use only A-z">
-                    </div>
-                    <div class="input-form">
-                        <input type="password" placeholder="Password" required minlength="8">
-                    </div>  
-                    <div class="input-form">
-                        <input type="submit" value="Log In">
-                    </div> 
-                    <a href="#" class="forget">Forgot Password?</a>
-                </div>
-                <div class="copy">©Jinx's Lover</div>
+                <?php
+                $article=file_get_contents('article.html');
+                echo $article;
+                ?>
+                
             </article>
             
         </div>
